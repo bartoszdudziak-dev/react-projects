@@ -1,0 +1,79 @@
+:root {
+  --clr-dark-1: #415a77;
+  --clr-dark-2: #1b263b;
+  --clr-dark-3: #0d1b2a;
+
+  --clr-light-1: #edf6f9;
+  --clr-light-2: #e0e1dd;
+  --clr-light-3: #778da9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: var(--clr-dark-3);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+}
+
+.app {
+  padding: 3rem 4rem;
+  border-radius: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--clr-light-1);
+  text-transform: uppercase;
+  text-align: center;
+  margin-block-end: 2rem;
+}
+
+.accordionList {
+  list-style: none;
+  width: 40em;
+}
+
+.accordionItem {
+  position: relative;
+  background: var(--clr-light-1);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.accordionItem:not(:last-child) {
+  margin-block-end: 1.5rem;
+}
+
+.accordionItem > span {
+  position: absolute;
+  top: 0.3rem;
+  right: 1rem;
+  font-size: 2rem;
+}
+
+.accordionItem > h2 {
+  text-transform: uppercase;
+  color: var(--clr-dark-2);
+  font-size: 1.25rem;
+}
+
+.accordionItem > p {
+  margin-block-start: 1rem;
+  max-width: 95%;
+  color: var(--clr-dark-2);
+}
+
+.active {
+  background: var(--clr-light-2);
+}
