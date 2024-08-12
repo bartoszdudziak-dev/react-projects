@@ -1,0 +1,33 @@
+:root {
+  --clr-dark-1: #415a77;
+  --clr-dark-2: #1b263b;
+  --clr-dark-3: #0d1b2a;
+
+  --clr-light-1: #edf6f9;
+  --clr-light-2: #e0e1dd;
+  --clr-light-3: #778da9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: var(--clr-dark-2);
+  color: var(--clr-light-1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+  margin-block-end: 1rem;
+}
