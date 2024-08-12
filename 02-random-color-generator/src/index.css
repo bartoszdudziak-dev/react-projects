@@ -1,0 +1,96 @@
+:root {
+  --clr-dark-1: #415a77;
+  --clr-dark-2: #1b263b;
+  --clr-dark-3: #0d1b2a;
+
+  --clr-light-1: #edf6f9;
+  --clr-light-2: #e0e1dd;
+  --clr-light-3: #778da9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: var(--clr-dark-3);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+}
+
+.app {
+  width: 40rem;
+
+  background-color: var(--clr-light-1);
+  color: var(--clr-dark-3);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 0.25rem;
+}
+
+.colorPreview {
+  width: 15rem;
+  aspect-ratio: 1;
+  background-color: #0d1b2a;
+  border-radius: inherit;
+  border: 2px solid #000000;
+  cursor: pointer;
+  position: relative;
+}
+
+.tooltip {
+  text-transform: uppercase;
+  font-size: 0.75;
+  visibility: hidden;
+  position: absolute;
+  bottom: 100%;
+}
+
+.colorPreview:hover .tooltip {
+  visibility: visible;
+}
+
+.colorCode {
+  font-size: 2rem;
+  color: #000000;
+}
+
+.buttons {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  margin-block-end: 1.5rem;
+}
+
+.btn {
+  background-color: var(--clr-light-3);
+  cursor: pointer;
+  flex: 1;
+  font: inherit;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border: none;
+  border-radius: 0.25rem;
+  color: var(--clr-light-1);
+  padding-block: 0.5rem;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+.active {
+  background-color: var(--clr-dark-2);
+}
